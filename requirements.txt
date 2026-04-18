@@ -1,0 +1,71 @@
+# Requirements for Rakshak
+
+## System Requirements
+
+- Windows 10/11 (64-bit)
+- At least 4GB RAM
+- 100MB free disk space
+
+## Software Requirements
+
+### For Development
+
+- **Rust**: Latest stable version (via rustup)
+- **Node.js**: v18 or higher
+- **npm**: v9 or higher
+- **Visual Studio Build Tools 2022** (Windows)
+
+### Frontend Dependencies
+
+```
+@tailwindcss/postcss@^4.2.2
+@tailwindcss/vite@^4.2.2
+@tauri-apps/api@^2.10.1
+@tauri-apps/plugin-dialog@^2.7.0
+@tauri-apps/plugin-opener@^2
+framer-motion@^12.38.0
+lucide-react@^1.8.0
+react@^19.1.0
+react-dom@^19.1.0
+recharts@^3.8.1
+```
+
+### Dev Dependencies
+
+```
+@tauri-apps/cli@^2
+@types/react@^19.1.8
+@types/react-dom@^19.1.6
+@vitejs/plugin-react@^4.6.0
+autoprefixer@^10.4.27
+postcss@^8.5.9
+tailwindcss@^4.2.2
+typescript@~5.8.3
+vite@^7.0.4
+```
+
+### Rust Dependencies
+
+```
+tauri@2 (with tray-icon feature)
+tauri-plugin-opener@2
+tauri-plugin-notification@2.2.1
+tauri-plugin-dialog@2.7.0
+serde@1 (with derive)
+serde_json@1
+anyhow@1
+log@0.4
+env_logger@0.11
+dunce@1.0
+notify@7 (with macos_kqueue)
+sysinfo@0.33
+dirs@6
+walkdir@2.5
+netstat2@0.9
+crossbeam-channel@0.5
+tokio@1 (with full)
+dashmap@6.1.0
+lazy_static@1.5.0
+ferrisetw@1.2.0 (Windows)
+windows@0.58 (Windows)
+```

@@ -1,0 +1,71 @@
+[package]
+name = "tauri-app"
+version = "0.1.0"
+description = "Rakshak — Early Ransomware Detection"
+authors = ["you"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "tauri_app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-opener = "2"
+tauri-plugin-notification = "2.2.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+log = "0.4"
+env_logger = "0.11"
+dunce = "1.0"
+
+# File-system watcher for real-time monitoring
+notify = { version = "7", features = ["macos_kqueue"] }
+
+# System / process information
+sysinfo = "0.33"
+
+# Platform-standard directory paths (Documents, Desktop, etc.)
+dirs = "6"
+
+# File walking for File Scanner
+walkdir = "2.5"
+
+# Network socket enumeration for C2 correlation
+netstat2 = "0.9"
+tauri-plugin-dialog = "2.7.0"
+
+# Concurrent channels for low-latency event dispatch
+crossbeam-channel = "0.5"
+
+# Async runtime for background tasks
+tokio = { version = "1", features = ["full"] }
+dashmap = "6.1.0"
+lazy_static = "1.5.0"
+
+# Windows APIs for process priority elevation
+[target.'cfg(windows)'.dependencies]
+ferrisetw = "1.2.0"
+windows = { version = "0.58", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_System_SystemInformation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Registry",
+    "Win32_Security",
+    "Win32_System_Diagnostics_Etw",
+    "Win32_Storage_InstallableFileSystems",
+    "Win32_System_IO",
+    "Win32_System_ProcessStatus",
+] }

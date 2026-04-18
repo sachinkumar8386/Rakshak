@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* ── Surface tokens ─────────────────────────── */
+  --color-surface:                   #0b0d1e;
+  --color-surface-container-lowest:  #000000;
+  --color-surface-container-low:     #0f1225;
+  --color-surface-container:         #15182d;
+  --color-surface-container-high:    #1b1e35;
+  --color-surface-container-highest: #21243d;
+  --color-surface-dim:               #0b0d1e;
+
+  /* ── Accent tokens ──────────────────────────── */
+  --color-primary:           #3fff8b;
+  --color-primary-container: #13ea79;
+  --color-tertiary:          #ff7350;
+  --color-tertiary-container:#fc3c00;
+  --color-secondary:         #fdc003;
+
+  /* ── Outline & text tokens ──────────────────── */
+  --color-outline:           #73748a;
+  --color-outline-variant:   #45465b;
+  --color-on-surface:        #e3e3fd;
+
+  /* ── Typography ─────────────────────────────── */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body:    "Inter", sans-serif;
+  --font-mono:    "Roboto Mono", monospace;
+}
+
+/* ── Base ────────────────────────────────────── */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #0b0d1e;
+    color: #e3e3fd;
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Space Grotesk", sans-serif;
+    color: #e3e3fd;
+  }
+
+  /* Custom scrollbar to match the dark theme */
+  ::-webkit-scrollbar        { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track  { background: #0f1225; }
+  ::-webkit-scrollbar-thumb  { background: #45465b; border-radius: 2px; }
+  ::-webkit-scrollbar-thumb:hover { background: #73748a; }
+}
+
+/* ── Utility shorthands ──────────────────────── */
+@layer components {
+  .font-display { font-family: "Space Grotesk", sans-serif; }
+  .font-body    { font-family: "Inter", sans-serif; }
+  .font-mono    { font-family: "Roboto Mono", monospace; }
+
+  /* Glassmorphism panel (for overlays / modals) */
+  .glass-panel {
+    background: rgba(21, 24, 45, 0.72);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* Primary CTA gradient button */
+  .btn-primary {
+    background: linear-gradient(135deg, #3fff8b, #13ea79);
+    color: #0b0d1e;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+  }
+  .btn-primary:hover {
+    box-shadow: 0 0 24px rgba(63, 255, 139, 0.45);
+  }
+
+  /* Ghost button */
+  .btn-ghost {
+    background: rgba(115, 116, 138, 0.15);
+    color: #3fff8b;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(69, 70, 91, 0.4);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-ghost:hover { background: rgba(115,116,138,0.25); }
+
+  /* Alert / Kill-process button */
+  .btn-alert {
+    background: linear-gradient(135deg, #ff7350, #fc3c00);
+    color: #fff;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255,115,80,0.35);
+    transition: box-shadow 0.2s;
+  }
+  .btn-alert:hover { box-shadow: 0 0 32px rgba(255,115,80,0.6); }
+
+  /* ── Fix button blink / flicker on tap ──────── */
+  button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+  button:active {
+    transform: none !important;
+    animation: none !important;
+  }
+  button:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  button:focus-visible {
+    outline: 2px solid rgba(63, 255, 139, 0.4);
+    outline-offset: 2px;
+  }
+
+  /* ── Glass-morphism card for dashboard panels ── */
+  .glass-card {
+    background: rgba(21, 24, 45, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(69, 70, 91, 0.3);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ── Shield Wave Animation ──────────────────────── */
+.shield-wave-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.shield-wave {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  opacity: 0;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+.shield-wave-1 {
+  animation: shieldPulse 6s 0s infinite;
+}
+.shield-wave-2 {
+  animation: shieldPulse 6s 2s infinite;
+}
+.shield-wave-3 {
+  animation: shieldPulse 6s 4s infinite;
+}
+
+@keyframes shieldPulse {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}

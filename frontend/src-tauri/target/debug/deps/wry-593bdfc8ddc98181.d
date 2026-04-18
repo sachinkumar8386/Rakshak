@@ -1,0 +1,12 @@
+C:\Users\DELL\Downloads\Rakshak Project\frontend\src-tauri\target\debug\deps\wry-593bdfc8ddc98181.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\custom_protocol_workaround.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\proxy.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\web_context.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\drag_drop.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\util.rs
+
+C:\Users\DELL\Downloads\Rakshak Project\frontend\src-tauri\target\debug\deps\libwry-593bdfc8ddc98181.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\custom_protocol_workaround.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\error.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\proxy.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\web_context.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\drag_drop.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\util.rs
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\custom_protocol_workaround.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\error.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\proxy.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\web_context.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\mod.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\drag_drop.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\wry-0.54.4\src\webview2\util.rs:

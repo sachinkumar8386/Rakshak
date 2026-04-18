@@ -1,0 +1,14 @@
+C:\Users\DELL\Downloads\Rakshak Project\frontend\src-tauri\target\debug\deps\serde-b6a2782e30451e8c.d: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\DELL\Downloads\Rakshak\ Project\frontend\src-tauri\target\debug\build\serde-1fe7c0c3e06e366c\out/private.rs
+
+C:\Users\DELL\Downloads\Rakshak Project\frontend\src-tauri\target\debug\deps\libserde-b6a2782e30451e8c.rlib: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\DELL\Downloads\Rakshak\ Project\frontend\src-tauri\target\debug\build\serde-1fe7c0c3e06e366c\out/private.rs
+
+C:\Users\DELL\Downloads\Rakshak Project\frontend\src-tauri\target\debug\deps\libserde-b6a2782e30451e8c.rmeta: C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\DELL\Downloads\Rakshak\ Project\frontend\src-tauri\target\debug\build\serde-1fe7c0c3e06e366c\out/private.rs
+
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\DELL\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+C:\Users\DELL\Downloads\Rakshak\ Project\frontend\src-tauri\target\debug\build\serde-1fe7c0c3e06e366c\out/private.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\DELL\\Downloads\\Rakshak Project\\frontend\\src-tauri\\target\\debug\\build\\serde-1fe7c0c3e06e366c\\out
