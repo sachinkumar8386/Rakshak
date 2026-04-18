@@ -2,6 +2,9 @@
 
 Rakshak is a ransomware detection and prevention tool that monitors your system in real-time to identify and block ransomware attacks before they can encrypt your files.
 
+<img width="1918" height="1018" alt="Screenshot 2026-04-18 160543" src="https://github.com/user-attachments/assets/ceed5e83-ae87-4d54-aff0-2ed9cd662159" />
+
+
 ## Features
 
 - **Real-time File Monitoring** - Watch for suspicious file modifications across your system
